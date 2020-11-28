@@ -94,11 +94,11 @@ body {
   line-height: 34px;
 }
 
-.main__delivery {
+.row > section {
   width: 100%;
   padding: 0px 8px 20px 8px;
 }
-.main__delivery img {
+.row > section img {
   width: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -130,6 +130,7 @@ body {
 
 footer {
   background-color: #000000;
+  position: relative;
 }
 
 .footer__logo {
@@ -165,6 +166,9 @@ footer {
   color: #ffffff;
   line-height: 40px;
 }
+.footer__columns a:hover {
+  color: #979797;
+}
 
 .footer__language {
   margin: 0px 0px 32px 0px;
@@ -197,4 +201,23 @@ footer {
   padding-top: 40px;
   display: flex;
   border-top: 1px solid #979797;
+}
+
+.footer__totop {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #59bd5a;
+  cursor: pointer;
+}
+.footer__totop .fas {
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #ffffff;
 }

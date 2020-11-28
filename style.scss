@@ -88,7 +88,7 @@ body {
   @include font(400, 22, 34, $black);
 }
 // row
-.main__delivery {
+.row > section {
   width: 100%;
   padding: 0px 8px 20px 8px;
   & img {
@@ -114,6 +114,7 @@ body {
 
 footer {
   background-color: #000000;
+  position: relative;
 }
 .footer__logo {
   padding-top: 56px;
@@ -141,6 +142,9 @@ footer {
   & a {
     text-decoration: none;
     @include font(400, 13, 40, $white);
+    &:hover {
+      color: $search;
+    }
   }
 }
 
@@ -171,4 +175,22 @@ footer {
   padding-top: 40px;
   display: flex;
   border-top: 1px solid $search;
+}
+.footer__totop {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #59bd5a;
+  cursor: pointer;
+  & .fas {
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: $white;
+  }
 }
