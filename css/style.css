@@ -1,7 +1,5 @@
 body {
   font-family: "Roboto", sans-serif;
-  width: 1124px;
-  margin: 0 auto;
 }
 
 *,
@@ -18,6 +16,8 @@ body {
 
 .container {
   padding: 0px 87px;
+  width: 1124px;
+  margin: 0 auto;
 }
 
 .header__item {
@@ -58,8 +58,12 @@ body {
 
 .main__item {
   padding-top: 32px;
+  padding-bottom: 80px;
 }
 
+.main__search {
+  padding-bottom: 56px;
+}
 .main__search [type=search] {
   width: 100%;
   height: 48px;
@@ -79,23 +83,118 @@ body {
   outline: none;
 }
 
+.main__content {
+  padding-top: 16px;
+}
+
 .main__title {
-  padding-top: 56px;
   font-weight: 400;
   font-size: 22px;
   color: #1d1d1d;
   line-height: 34px;
-  padding-bottom: 16px;
 }
 
 .main__delivery {
   width: 100%;
-  height: 366px;
-  padding: 0px 8px 16px 8px;
+  padding: 0px 8px 20px 8px;
 }
 .main__delivery img {
-  background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  object-fit: fill;
+  object-fit: cover;
+}
+
+.title {
+  padding-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1d1d1d;
+  line-height: 24px;
+}
+
+.subtitle {
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #626262;
+  line-height: 21px;
+}
+
+.time {
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #1d1d1d;
+  line-height: 21px;
+}
+
+footer {
+  background-color: #000000;
+}
+
+.footer__logo {
+  padding-top: 56px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #979797;
+}
+
+.footer__info {
+  display: flex;
+  border-bottom: 1px solid #979797;
+  padding-top: 32px;
+}
+
+.footer__columns {
+  width: 33%;
+  color: #e0e0e0;
+}
+.footer__columns span {
+  color: #49a144;
+}
+.footer__columns div {
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 21px;
+}
+.footer__columns a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.footer__language {
+  margin: 0px 0px 32px 0px;
+}
+
+.footer__links {
+  display: flex;
+  margin-bottom: 60px;
+}
+.footer__links a {
+  margin-right: 12px;
+}
+
+.fab {
+  font-size: 25px;
+  color: #979797;
+}
+
+.footer__download {
+  margin-top: 41px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 41px;
+}
+.footer__download a:first-child {
+  margin-right: 40px;
+}
+
+.footer__agreement {
+  padding-top: 40px;
+  display: flex;
+  border-top: 1px solid #979797;
 }

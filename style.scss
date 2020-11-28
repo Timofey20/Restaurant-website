@@ -2,10 +2,9 @@
 $grey: #e0e0e0;
 $black: #1d1d1d;
 $search: #979797;
+$white: #ffffff;
 body {
   font-family: "Roboto", sans-serif;
-  width: 1124px;
-  margin: 0 auto;
 }
 
 *,
@@ -23,6 +22,8 @@ body {
 
 .container {
   padding: 0px 87px;
+  width: 1124px;
+  margin: 0 auto;
 }
 
 .header__item {
@@ -60,8 +61,10 @@ body {
 
 .main__item {
   padding-top: 32px;
+  padding-bottom: 80px;
 }
 .main__search {
+  padding-bottom: 56px;
   & [type="search"] {
     width: 100%;
     height: 48px;
@@ -78,27 +81,94 @@ body {
     }
   }
 }
+.main__content {
+  padding-top: 16px;
+}
 .main__title {
-  padding-top: 56px;
   @include font(400, 22, 34, $black);
-  padding-bottom: 16px;
 }
 // row
 .main__delivery {
   width: 100%;
-  height: 366px;
-  padding: 0px 8px 16px 8px;
+  padding: 0px 8px 20px 8px;
   & img {
-    background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
-    object-fit: fill;
+    object-fit: cover;
   }
 }
-// .what {
-//   margin: 8px 0;
-//   padding: 32px;
-//   text-align: center;
-//   font: 32px sans-serif;
-//   content: " ";
-// }
+.title {
+  padding-top: 16px;
+  @include font(400, 16, 24, $black);
+}
+.subtitle {
+  padding-top: 4px;
+  @include font(400, 14, 21, #626262);
+}
+.time {
+  padding-top: 4px;
+  @include font(400, 13, 21, $black);
+}
+
+// footer
+
+footer {
+  background-color: #000000;
+}
+.footer__logo {
+  padding-top: 56px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $search;
+}
+
+// footer__columns
+
+.footer__info {
+  display: flex;
+  border-bottom: 1px solid $search;
+  padding-top: 32px;
+}
+.footer__columns {
+  width: 33%;
+  color: $grey;
+  & span {
+    color: #49a144;
+  }
+  & div {
+    margin-bottom: 17px;
+    @include font(400, 16, 21, $white);
+  }
+  & a {
+    text-decoration: none;
+    @include font(400, 13, 40, $white);
+  }
+}
+
+.footer__language {
+  margin: 0px 0px 32px 0px;
+}
+.footer__links {
+  display: flex;
+  margin-bottom: 60px;
+  & a {
+    margin-right: 12px;
+  }
+}
+.fab {
+  font-size: 25px;
+  color: $search;
+}
+.footer__download {
+  margin-top: 41px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 41px;
+  & a:first-child {
+    margin-right: 40px;
+  }
+}
+.footer__agreement {
+  padding-top: 40px;
+  display: flex;
+  border-top: 1px solid $search;
+}
