@@ -90,7 +90,12 @@ body {
 
 .main__delivery {
   width: 100%;
+  height: 366px;
+  padding: 0px 8px 16px 8px;
 }
 .main__delivery img {
-  padding: 0px 16px 0px 0px;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: fill;
 }
