@@ -31,6 +31,9 @@ body {
   align-items: center;
   display: flex;
 }
+.header__buttons button:hover {
+  background-color: #e0e0e0;
+}
 
 .header__login {
   padding: 14px 20px;
@@ -54,6 +57,50 @@ body {
 .header__store {
   padding-top: 21px;
   height: 72px;
+}
+
+.advertising {
+  background: url(/Restaurant-website/img/store2/photo.png) no-repeat;
+  background-size: cover;
+}
+
+.advertising__item {
+  padding: 80px 0px;
+}
+
+.advertising__block {
+  background-color: #fff;
+  width: 389px;
+}
+.advertising__block h1 {
+  padding: 38px 38px 54px 38px;
+  font-weight: 400;
+  font-size: 36px;
+  color: #1d1d1d;
+  line-height: 20px;
+}
+
+.advertising__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 38px 38px 38px;
+}
+.advertising__info p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #626262;
+  line-height: 20px;
+}
+
+.advertising__time {
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 20px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: #262626;
 }
 
 .main__item {
@@ -97,6 +144,10 @@ body {
 .row > section {
   width: 100%;
   padding: 0px 8px 20px 8px;
+  text-decoration: none;
+}
+.row > section a {
+  text-decoration: none;
 }
 .row > section img {
   width: 100%;
@@ -143,6 +194,21 @@ footer {
   display: flex;
   border-bottom: 1px solid #979797;
   padding-top: 32px;
+}
+
+.footer__language {
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 20px;
+  background-color: #3b3b3b;
+  border: none;
+  padding: 10px 20px;
+  width: 50%;
+  border: 1px solid #979797;
+}
+.footer__language:focus {
+  outline: none;
 }
 
 .footer__columns {
@@ -198,9 +264,10 @@ footer {
 }
 
 .footer__agreement {
-  padding-top: 40px;
+  padding-top: 30px;
   display: flex;
   border-top: 1px solid #979797;
+  padding-bottom: 30px;
 }
 
 .footer__totop {

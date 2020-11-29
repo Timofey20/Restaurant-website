@@ -35,6 +35,9 @@ body {
 .header__buttons {
   align-items: center;
   display: flex;
+  & button:hover {
+    background-color: $grey;
+  }
 }
 .header__login {
   padding: 14px 20px;
@@ -54,6 +57,38 @@ body {
 .header__store {
   padding-top: 21px;
   height: 72px;
+}
+
+// advertising
+.advertising {
+  background: url(/Restaurant-website/img/store2/photo.png) no-repeat;
+  background-size: cover;
+}
+.advertising__item {
+  padding: 80px 0px;
+}
+.advertising__block {
+  background-color: #fff;
+  width: 389px;
+  & h1 {
+    padding: 38px 38px 54px 38px;
+    @include font(400, 36, 20, #1d1d1d);
+  }
+}
+.advertising__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 38px 38px 38px;
+  & p {
+    @include font(400, 14, 20, #626262);
+  }
+}
+.advertising__time {
+  @include font(400, 13, 20, $white);
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: #262626;
 }
 
 // main
@@ -91,6 +126,10 @@ body {
 .row > section {
   width: 100%;
   padding: 0px 8px 20px 8px;
+  text-decoration: none;
+  & a {
+    text-decoration: none;
+  }
   & img {
     width: 100%;
     background-repeat: no-repeat;
@@ -128,6 +167,17 @@ footer {
   display: flex;
   border-bottom: 1px solid $search;
   padding-top: 32px;
+}
+.footer__language {
+  @include font(400, 13, 20, $white);
+  background-color: #3b3b3b;
+  border: none;
+  padding: 10px 20px;
+  width: 50%;
+  border: 1px solid $search;
+  &:focus {
+    outline: none;
+  }
 }
 .footer__columns {
   width: 33%;
@@ -172,9 +222,10 @@ footer {
   }
 }
 .footer__agreement {
-  padding-top: 40px;
+  padding-top: 30px;
   display: flex;
   border-top: 1px solid $search;
+  padding-bottom: 30px;
 }
 .footer__totop {
   content: "";
