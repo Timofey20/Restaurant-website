@@ -132,6 +132,7 @@ body {
 }
 .main__radio input[type=radio]:checked + label {
   color: #327430;
+  font-weight: 700;
 }
 
 .snack .title {

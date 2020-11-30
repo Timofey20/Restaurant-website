@@ -114,6 +114,7 @@ body {
     display: none;
     &:checked + label {
       color: #327430;
+      font-weight: 700;
     }
   }
 }
