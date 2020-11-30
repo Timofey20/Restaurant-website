@@ -36,6 +36,7 @@ body {
 }
 
 .header__login {
+  cursor: pointer;
   padding: 14px 20px;
   border: 2px solid #e0e0e0;
   border-radius: 2px;
@@ -57,50 +58,6 @@ body {
 .header__store {
   padding-top: 21px;
   height: 72px;
-}
-
-.advertising {
-  background: url(/Restaurant-website/img/store2/photo.png) no-repeat;
-  background-size: cover;
-}
-
-.advertising__item {
-  padding: 80px 0px;
-}
-
-.advertising__block {
-  background-color: #fff;
-  width: 389px;
-}
-.advertising__block h1 {
-  padding: 38px 38px 54px 38px;
-  font-weight: 400;
-  font-size: 36px;
-  color: #1d1d1d;
-  line-height: 20px;
-}
-
-.advertising__info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 38px 38px 38px;
-}
-.advertising__info p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #626262;
-  line-height: 20px;
-}
-
-.advertising__time {
-  font-weight: 400;
-  font-size: 13px;
-  color: #ffffff;
-  line-height: 20px;
-  padding: 8px 16px;
-  border-radius: 16px;
-  background-color: #262626;
 }
 
 .main__item {
@@ -203,9 +160,11 @@ footer {
   line-height: 20px;
   background-color: #3b3b3b;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 0px 10px 20px;
   width: 50%;
+  font: 400 13.3333px "Roboto";
   border: 1px solid #979797;
+  font-size: 1em;
 }
 .footer__language:focus {
   outline: none;

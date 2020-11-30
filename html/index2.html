@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
-    <link rel="stylesheet" href="/Restaurant-website/css/style.css">
+    <link rel="stylesheet" href="/Restaurant-website/css/style2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -18,7 +18,8 @@
         <div class="container">
             <div class="header__item">
                 <div class="header__logo">
-                    <img src="/Restaurant-website/img/logo.svg" alt="">
+                    <a href="/Restaurant-website/html/index.html">
+                        <img src="/Restaurant-website/img/logo.svg" alt=""></a>
                 </div>
                 <div class="header__buttons">
                     <button type="submit" class="header__login">Войти</button>
@@ -50,10 +51,105 @@
     <section class="main">
         <div class="container">
             <div class="main__item">
-                .
+                <div class="main__filter">
+                    <div class="main__radio">
+                        <input id="radio-1" type="radio" name="radio" checked>
+                        <label for="radio-1">Закуски</label>
+                    </div>
+                    <div class="main__radio">
+                        <input id="radio-2" type="radio" name="radio">
+                        <label for="radio-2">Салаты</label>
+                    </div>
+                    <div class="main__radio">
+                        <input id="radio-3" type="radio" name="radio">
+                        <label for="radio-3">Супы</label>
+                    </div>
+                    <div class="main__radio">
+                        <input id="radio-4" type="radio" name="radio">
+                        <label for="radio-4">Горячие блюда</label>
+                    </div>
+                    <div class="main__radio">
+                        <input id="radio-5" type="radio" name="radio">
+                        <label for="radio-5">Гарниры</label>
+                    </div>
+                    <div class="main__radio">
+                        <input id="radio-6" type="radio" name="radio">
+                        <label for="radio-6">Десерты</label>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <div class="snack">
+        <div class="container">
+            <div class="snack title">Закуски</div>
+            <div class="row">
+                <section class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="">
+                        <div class="snack__text">
+                            <h4 class="snack__title">Сельдь на бородинском хлебе</h4>
+                            <p class="snack__subtitle">С яйцом и огурцом</p>
+                            <p class="snackt__prise">240 ₽</p>
+                        </div>
+                        <img src="/Restaurant-website/img/store2/Restaurant/snack (1).png" alt="">
+
+                    </a>
+                </section>
+
+                <section class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="">
+                        <div class="snack__text">
+                            <h4 class="snack__title">Соленья ассорти</h4>
+                            <p class="snackt__prise">320 ₽</p>
+                        </div>
+                        <img src="/Restaurant-website/img/store2/Restaurant/snack (2).png" alt="">
+
+                    </a>
+                </section>
+                <section class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="">
+                        <div class="snack__text">
+                            <h4 class="snack__title">Грибы маринованные</h4>
+                            <p class="snackt__prise">300 ₽</p>
+                        </div>
+                        <img src="/Restaurant-website/img/store2/Restaurant/snack (3).png" alt="">
+
+                    </a>
+                </section>
+                <section class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="">
+                        <div class="snack__text">
+                            <h4 class="snack__title">Сало домашнее с горчицей</h4>
+                            <p class="snackt__prise">320 ₽</p>
+                        </div>
+                        <img src="/Restaurant-website/img/store2/Restaurant/snack (4).png" alt="">
+
+                    </a>
+                </section>
+                <section class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="">
+                        <div class="snack__text">
+                            <h4 class="snack__title">Малосольная семга</h4>
+                            <p class="snackt__prise">390 ₽</p>
+                        </div>
+                        <img src="/Restaurant-website/img/store2/Restaurant/snack (5).png" alt="">
+
+                    </a>
+                </section>
+                <section class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="">
+                        <div class="snack__text">
+                            <h4 class="snack__title">Язык говяжий с хреном</h4>
+                            <p class="snackt__prise">350 ₽</p>
+                        </div>
+                        <img src="/Restaurant-website/img/store2/Restaurant/snack (6).png" alt="">
+
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
 
 
     <footer>
@@ -66,10 +162,10 @@
                     <div class="footer__columns">
                         <select class="footer__language">
                             <option>
-                                <p>Русский</p>
+                                Русский
                             </option>
                             <option>
-                                <p>English</p>
+                                English
                             </option>
                         </select>
                         <div><span>#</span>UberEats</div>
